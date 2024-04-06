@@ -1,0 +1,287 @@
+/* entire page */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Josefin Slab", "Khula";
+}
+
+/* Homepage header section */
+
+/* Navigation */
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 30px;
+    padding: auto;
+    border-bottom: 10px black;
+ }
+ .homeItem,
+ .aboutItem,
+ .caseItem {
+    padding: 0px 25px 25px 0px;
+    font-family: "Khula";
+    font-size: 24px;
+    margin-top: 14px;
+ }
+ 
+  /* Header */
+ 
+ header {
+    background-color: #F2DAAC;
+    opacity: 85%;
+    border-radius: 10px;
+    height: 183px;
+    width: 1226px;
+    display: flex;
+    flex-direction: row-reverse; 
+  }
+ #headerName {
+    font-size: 64px;
+    color: black;
+    font-family: "Josefin Slab";
+    margin-bottom: 0;
+    position:relative;
+    left: -115px;
+ }
+
+ /*Overview*/
+ #Overview {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "sectionTitle persona"
+    "description persona" ;
+    padding: 17px 0 105px 0;
+ }
+.sectionTitle {
+    font-family: "Khula";
+    font-size: 40px;
+    height: 47px;
+    grid-area: sectionTitle;
+    padding-left: 105px;
+}
+.description{
+    padding-left: 31px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    grid-area: description;
+ }
+ .persona {
+    grid-area: persona;
+    width: 589px;
+    height: 389px;
+    padding-top: 104px
+ }
+ /*Dilverables*/
+ #deliverables {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "sectionTitle description";
+    padding: 17px 0 105px 0;
+ }
+ .sectionTitle {
+    font-family: "Khula";
+    font-size: 40px;
+    height: 47px;
+    grid-area: sectionTitle;
+    padding-left: 105px;
+}
+ .description{
+    padding: 31px 97px 0 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    grid-area: description;
+ }
+
+/*User Research*/
+#userResearch {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "sectionTitle sectionTitle"
+    "researchPic1 researchDescription1"
+    "researchDescription2 researchPic2";
+    padding: 17px 0 105px 0;
+ }
+#researchPic1 {
+    grid-area: researchPic1;
+    width: 589px;
+    height: 389px;
+    padding-top: 104px
+ }
+ #researchPic2 {
+    grid-area: researchPic2;
+    width: 589px;
+    height: 389px;
+    padding-top: 104px
+ }
+ #researchDescription1{
+    padding: 31px 97px 0 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    grid-area: researchDescription1;
+ }
+ #researchDescription2{
+    padding: 31px 97px 0 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    grid-area: researchDescription2;
+ }
+
+ /* Definition*/
+ #definition {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "sectionTitle" 
+    "description"
+    "persona";
+    padding: 17px 0 105px 0;
+ }
+
+ /* Ideation*/
+ #ideation {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "sectionTitle sectionTitle" 
+    "prototype1 description"
+    "prototype1 prototype2";
+    padding: 17px 0 105px 0; 
+ }
+ #prototype1 {
+    grid-area: prototype1;
+ }
+ #prototype2 {
+    grid-area: prototype2;
+ }
+
+ /*Prototyping*/
+ #prototyping {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "sectionTitle sectionTitle" 
+    "description userFlow"
+    "prototype3 prototype3";
+    padding: 17px 0 105px 0; 
+ }
+ #userFlow {
+    grid-area: userFlow;
+ }
+ #prototype3 {
+    grid-area: prototype3;
+}
+/*User Testing*/
+#userTesting{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "sectionTitle sectionTitle sectionTitle" 
+    "research2 userFlow2 description"
+    "research2 userFlow2 userFlow3" 
+    "prototype4 prototype4 prototype4";
+    padding: 17px 0 105px 0; 
+}
+#research2 {
+    grid-area: research2;
+}
+#userFlow2 {
+    grid-area: userFlow2;
+}
+#userFlow3 {
+    grid-area: userFlow3;
+}
+#prototype4 {
+    grid-area: prototype4;
+}
+
+/*Future*/
+#future {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "sectionTitle" 
+    "description";
+    padding: 17px 0 105px 0; 
+}
+
+/*Footer*/
+
+footer {
+    opacity: 0.85;
+    background-color: #f2daac;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 64px 15px 15px 15px;
+ }
+ #footerName {
+    font-size: 64px;
+    font-family: "Josefin Slab"
+ }
+ .button {
+    background-color: #f1c84a;
+    color: black;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: "Khula";
+    text-align: center;
+ }
+ .connectSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 105px 0px 105px 0px;
+ }
+ .connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 307px;
+ }
+ .socialButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ #socialButtonGit {
+    height: 24px;
+    width: 24px;
+ }
+ #socialButtonLinked {
+    height: 24px;
+    width: 24px;
+ }
+ .footerNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+ }
+ .homeItemFoot,
+ .aboutItemFoot,
+ .caseItemFoot {
+    font: "Khula";
+    font-size: 24px;
+    padding-bottom: 41px;
+    margin:0;
+ }
